@@ -104,3 +104,5 @@ This command will start Laravel server and give you base url of Laravel applicat
 **http://localhost:8000**
 
 That's it - load the homepage
+
+## Usage
