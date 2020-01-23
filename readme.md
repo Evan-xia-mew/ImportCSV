@@ -73,27 +73,6 @@ For add fake record into Mysql database. First we want to make table in Mysql da
 
 This command will migrate default data from database/migrations folder and it will make user table in define Mysql database.
 
-*Now for export data to csv file, we need to download and install Maatwebsite Version 3.0 package, for this we have go to command prompt and write following command.*
-
-*Run composer require maatwebsite/excel*
-
-*This command will download maatwebsite package in Laravel 5.8 application. Now we want to add into Laravel 5.8 application. For this we have open config/app.php and following service provider and aliase*
-
-*'providers' => [
-
- ....
-
- *Maatwebsite\Excel\ExcelServiceProvider::class,
-
-*],
-
-*'aliases' => [
-
- ....
-
- *'Excel' => Maatwebsite\Excel\Facades\Excel::class,
-
-*],
 
 Now we are ready
 
