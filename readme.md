@@ -73,18 +73,16 @@ For add fake record into Mysql database. First we want to make table in Mysql da
 
 This command will migrate default data from database/migrations folder and it will make user table in define Mysql database.
 
-
-Now we are ready
-
-**Run php artisan serve**
-
-This command will start Laravel server and give you base url of Laravel application. For test import and export data operation we have to write following url in browser.
-
 check Apache root path, for this we have open **app/Http/Middleware/VerifyCsrfToken** . check this class follow :
 
 *protected $except = [
         '/result'
     ];*
+
+Now we are ready
+
+**Run php artisan serve**
+This command will start Laravel server and give you base url of Laravel application. For test import data operation we have to write following url in browser.
 
 **http://localhost:8000**
 
