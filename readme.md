@@ -80,6 +80,13 @@ Now we are ready
 
 This command will start Laravel server and give you base url of Laravel application. For test import and export data operation we have to write following url in browser.
 
+check Apache root path, for this we have open **app/Http/Middleware/VerifyCsrfToken** . check this class follow :
+
+*protected $except = [
+        '/result'
+    ];
+}*
+
 **http://localhost:8000**
 
 That's it - load the homepage
