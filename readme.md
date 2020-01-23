@@ -74,28 +74,44 @@ The Laravel framework is open-source software licensed under the [MIT license](h
 
 ## Installation
 Clone the repository with git clone
+
 First We need to download Laravel 5.8 version, and install into our computer.
+
 same as install Composer and Maatwebsite Package 
+
 Run composer install
 
 After this we need to make database connection. For this we have to open .env file and under this file we have to define Mysql database configuration details which you can see below.
+
 Copy .env.example file to .env and edit database credentials there
+
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_DATABASE=****
+
 DB_USERNAME=****
+
 DB_PASSWORD=****
+
 After makiing database configuration, now in next step we will see how to make table from Laravel 5.8 application.
+
 Add Fake Records in Mysql Database
 
 For add fake record into Mysql database. First we want to make table in Mysql database from this Laravel 5.8 application. Here we will use user default model for migrate data from this Laravel 5.8 application. And for migrate data, you have to go command prompt and write following command.
 Run php artisan migrate
+
 This command will migrate default data from database/migrations folder and it will make user table in define Mysql database.
 
 Now for export data to csv file, we need to download and install Maatwebsite Version 3.0 package, for this we have go to command prompt and write following command.
+
 Run composer require maatwebsite/excel
+
 This command will download maatwebsite package in Laravel 5.8 application. Now we want to add into Laravel 5.8 application. For this we have open config/app.php and following service provider and aliase
+
 'providers' => [
 
  ....
@@ -111,9 +127,13 @@ This command will download maatwebsite package in Laravel 5.8 application. Now w
  'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
 ],
+
 Now we are ready
+
 Run php artisan serve
+
 This command will start Laravel server and give you base url of Laravel application. For test import and export data operation we have to write following url in browser.
+
 http://localhost:8000
 
 That's it - load the homepage
