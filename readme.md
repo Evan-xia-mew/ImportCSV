@@ -88,4 +88,14 @@ This command will start Laravel server and give you base url of Laravel applicat
 
 That's it - load the homepage
 
-## Usage
+
+## My project specialty:##
+
+In my project, I built the web pages through the blade view template, control template and routing (MVC template) instead of using Laravel Excel. In the control template,do the analyzing and organizing the data, arrange and calculate by array. I’ve researched a lot of information about how to import and export CSV files through Laravel framework, however most of the time on the website, the way is added Laravel Excel third-party library to Laravel application, following service provider and aliase import and export csv xlsx files.In my opinion, although Laravel Excel's method is concise and clear, my project has a more intuitive understanding of data, path, and method in future debugging.
+
+This is my first time  using laravel PHP Web Framework.In the Laravel documentation, I learned the facade (interface) and contract (interface). I also learned about middleware, csrf protection.
+
+
+
+
+
