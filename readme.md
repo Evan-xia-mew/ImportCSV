@@ -27,38 +27,6 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
@@ -73,17 +41,17 @@ The Laravel framework is open-source software licensed under the [MIT license](h
 
 
 ## Installation
-Clone the repository with git clone
+**Clone the repository with git clone**
 
 First We need to download Laravel 5.8 version, and install into our computer.
 
 same as install Composer and Maatwebsite Package 
 
-*Run composer install
+**Run composer install**
 
 After this we need to make database connection. For this we have to open .env file and under this file we have to define Mysql database configuration details which you can see below.
 
-Copy .env.example file to .env and edit database credentials there
+**Copy .env.example file to .env** and edit database credentials there
 
 DB_CONNECTION=mysql
 
@@ -91,50 +59,48 @@ DB_HOST=127.0.0.1
 
 DB_PORT=3306
 
-DB_DATABASE=****
+DB_DATABASE=testing
 
 DB_USERNAME=****
 
 DB_PASSWORD=****
 
-After makiing database configuration, now in next step we will see how to make table from Laravel 5.8 application.
-
-Add Fake Records in Mysql Database
+After makiing database configuration, now in next step we will see how to make table.**Launch MySQL Workbench, and create a new schema in the connected server. Schema Name:testing**
 
 For add fake record into Mysql database. First we want to make table in Mysql database from this Laravel 5.8 application.And for migrate data, you have to go command prompt and write following command.
 
-*Run php artisan migrate
+**Run php artisan migrate**
 
 This command will migrate default data from database/migrations folder and it will make user table in define Mysql database.
 
-Now for export data to csv file, we need to download and install Maatwebsite Version 3.0 package, for this we have go to command prompt and write following command.
+*Now for export data to csv file, we need to download and install Maatwebsite Version 3.0 package, for this we have go to command prompt and write following command.*
 
-*Run composer require maatwebsite/excel
+*Run composer require maatwebsite/excel*
 
-This command will download maatwebsite package in Laravel 5.8 application. Now we want to add into Laravel 5.8 application. For this we have open config/app.php and following service provider and aliase
+*This command will download maatwebsite package in Laravel 5.8 application. Now we want to add into Laravel 5.8 application. For this we have open config/app.php and following service provider and aliase*
 
-'providers' => [
-
- ....
-
- Maatwebsite\Excel\ExcelServiceProvider::class,
-
-],
-
-'aliases' => [
+*'providers' => [
 
  ....
 
- 'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+ *Maatwebsite\Excel\ExcelServiceProvider::class,
 
-],
+*],
+
+*'aliases' => [
+
+ ....
+
+ *'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+
+*],
 
 Now we are ready
 
-*Run php artisan serve
+**Run php artisan serve**
 
 This command will start Laravel server and give you base url of Laravel application. For test import and export data operation we have to write following url in browser.
 
-*http://localhost:8000
+**http://localhost:8000**
 
 That's it - load the homepage

@@ -7,7 +7,7 @@ use Illuminate\Routing\Controller as BaseController;
 
 class HomeController extends BaseController
 {
-    public function show() {
+    public function index() {
 
         return view('home');
     }

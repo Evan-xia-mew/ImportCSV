@@ -8,9 +8,8 @@ use \Datetime;
 
 class ResultController extends BaseController
 {
-    public function show(Request $request){
+    public function index(Request $request){
         $file = $request->file('fileToUpload');
-        // Parse uploaded file and save the data into database
         if ($file) {
             $fpath = $file->getPath() . '/' . $file->getBasename();
             $content = fopen($fpath, "r");

@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', 'HomeController@show');
-//Route:: get('/result', 'ResultController@show');
-Route:: post('/result', 'ResultController@show');
-Route:: get('/state', 'stateController@show');
+Route::get('/', 'HomeController@index');
+//Route:: get('/result', 'ResultController@index');
+Route:: post('/result', 'ResultController@index');
+Route:: get('/state', 'stateController@index');
 
 
 //Route::get('csv_file', 'CsvFile@index');

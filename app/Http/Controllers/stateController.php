@@ -10,7 +10,7 @@ use \Datetime;
 
 class stateController extends BaseController
 {
-    public function show() {
+    public function index() {
 		$datas = DB::select('select * from testing.data');
 		return view('state',['datas'=>$datas]);
     }
