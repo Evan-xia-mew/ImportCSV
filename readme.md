@@ -84,8 +84,7 @@ check Apache root path, for this we have open **app/Http/Middleware/VerifyCsrfTo
 
 *protected $except = [
         '/result'
-    ];
-}*
+    ];*
 
 **http://localhost:8000**
 
